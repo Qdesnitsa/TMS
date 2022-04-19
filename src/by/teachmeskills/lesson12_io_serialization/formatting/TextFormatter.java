@@ -5,28 +5,37 @@ import java.util.List;
 
 public final class TextFormatter {
 
-  private static final String VALID_END_SENTENCE = "[.!?]\\s";
-
   private TextFormatter() {
   }
 
+  private static final String SIGNS_TO_REPLACE = "[!?.,:;]";
+  private static final String EMPTY_REPLACEMENT_SYMBOL = "";
   public static boolean checkIsPalindrome(String str) {
-    return (str.equals(new StringBuffer(str).reverse().toString()));
+    String word = str.replaceAll(SIGNS_TO_REPLACE,EMPTY_REPLACEMENT_SYMBOL);
+    return (word.equals(new StringBuffer(word).reverse().toString()));
   }
 
+  private static final String VALID_END_SENTENCE = "[.!?]";
   public static String[] obtainSentences(String text) {
     String[] sentences = text.split(VALID_END_SENTENCE);
     return sentences;
   }
 
+  private static final String VALID_END_LINE = "[\\t\\v\\f\\r\\n]+";
+  public static String[] obtainLines(String text) {
+    String[] lines = text.split(VALID_END_LINE);
+    return lines;
+  }
+
+  private static final String SPACE_SYMBOL = "\\s+";
   public static String[][] obtainWords(String[] str) {
-    String[] words;
+    String[] sentences;
     String[][] wordsInSentence = new String[str.length][];
     for (int i = 0; i < str.length; i++) {
-      words = str[i].split("\\s+");
-      wordsInSentence[i] = new String[words.length];
-      for (int j = 0; j < words.length; j++) {
-        wordsInSentence[i][j] = words[j];
+      sentences = str[i].split(SPACE_SYMBOL);
+      wordsInSentence[i] = new String[sentences.length];
+      for (int j = 0; j < sentences.length; j++) {
+        wordsInSentence[i][j] = sentences[j];
       }
     }
     return wordsInSentence;
@@ -47,7 +56,7 @@ public final class TextFormatter {
     return words.length;
   }
 
-  public static List<String> checkFactors(String text) {
+  public static List<String> checkFactorsPalindromeWordsInSent(String text) {
     int maxCountWords = 5;
     int minCountWords = 3;
     String[] sent = obtainSentences(text);
@@ -57,6 +66,18 @@ public final class TextFormatter {
       if (TextFormatter.checkHasPalindrome(word[i]) ||
           (TextFormatter.countWords(word[i]) >= minCountWords && TextFormatter.countWords(word[i]) <= maxCountWords)) {
         list.add(sent[i]);
+      }
+    }
+    return list;
+  }
+
+  public static List<String> checkHasWords(String[] sentences, String[] words) {
+    List<String> list = new ArrayList<>();
+    for (int i = 0; i < sentences.length; i++) {
+      for (int j = 0; j < words.length; j++) {
+        if (sentences[i].contains(words[j])) {
+          list.add(sentences[i]);
+        }
       }
     }
     return list;

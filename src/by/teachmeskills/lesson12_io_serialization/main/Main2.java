@@ -14,7 +14,7 @@ public class Main2 {
 
     String text = Reading.readTextFromFile(inputFile2);
     Writing.cleanFile(outputFile2);
-    List<String> list = TextFormatter.checkFactors(text);
+    List<String> list = TextFormatter.checkFactorsPalindromeWordsInSent(text);
     Writing.writeToFile(outputFile2, list);
   }
 }

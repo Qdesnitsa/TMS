@@ -20,7 +20,7 @@ public final class Reading {
   private Reading() {
   }
 
-  public static List<String> readLineFromFile(String filePath) {
+  public static List<String> readLineFromFileList(String filePath) {
     List<String> list = new ArrayList<>();
     try {
       file = new File(filePath);

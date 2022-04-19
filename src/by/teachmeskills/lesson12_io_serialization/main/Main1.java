@@ -9,7 +9,7 @@ public class Main1 {
   private static String outputFile1 = "./src/by/teachmeskills/lesson12_io_serialization/resource/output_1.txt";
 
   public static void main(String[] args) {
-    List<String> list = Reading.readLineFromFile(inputFile1);
+    List<String> list = Reading.readLineFromFileList(inputFile1);
     Writing.cleanFile(outputFile1);
     Writing.writeToFile(outputFile1,list);
   }
