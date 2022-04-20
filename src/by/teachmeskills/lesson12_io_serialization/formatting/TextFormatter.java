@@ -28,7 +28,7 @@ public final class TextFormatter {
   }
 
   private static final String SPACE_SYMBOL = "\\s+";
-  public static String[][] obtainWords(String[] str) {
+  public static String[][] obtainWordsInSentences(String[] str) {
     String[] sentences;
     String[][] wordsInSentence = new String[str.length][];
     for (int i = 0; i < str.length; i++) {
@@ -60,7 +60,7 @@ public final class TextFormatter {
     int maxCountWords = 5;
     int minCountWords = 3;
     String[] sent = obtainSentences(text);
-    String[][] word = obtainWords(sent);
+    String[][] word = obtainWordsInSentences(sent);
     List<String> list = new ArrayList<>();
     for (int i = 0; i < word.length; i++) {
       if (TextFormatter.checkHasPalindrome(word[i]) ||

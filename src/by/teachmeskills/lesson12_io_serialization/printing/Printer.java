@@ -13,7 +13,7 @@ public class Printer {
     if (list.isEmpty()) {
       stb.append(noBlackWord);
     } else {
-      stb.append(hasBlackWord).append(quantity).append(list.size()).append("\n");
+      stb.append(hasBlackWord).append(quantity).append(list.size());
       for (String elem : list) {
         stb.append("\n").append(++counter).append(". ").append(elem.trim());
       }

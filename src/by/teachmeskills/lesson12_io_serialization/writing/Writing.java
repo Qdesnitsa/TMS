@@ -10,11 +10,11 @@ public final class Writing {
   private Writing() {}
 
   public static void writeToFile(String filePath, List<String> list) {
+    int counter = 0;
     try (FileWriter fileWriter = new FileWriter(filePath, true)) {
       for (String element : list) {
-        fileWriter.write(element + "\n");
+        fileWriter.write(++counter + ". " + element.trim() + "\n");
       }
-      fileWriter.append('\n');
     } catch (IOException e) {
       throw new RuntimeException("Error in writing to file", e);
     }
