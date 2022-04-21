@@ -12,7 +12,11 @@ public class Car implements Serializable {
   private double sellingPrice;
   private Engine engine;
 
-  private Car() {
+  public Car() {
+    this.engine = new Engine();
+    this.model = "A";
+    this.maxSpeed = 10;
+    this.sellingPrice = 1;
   }
 
   public Car(String model, int maxSpeed, double sellingPrice) {
@@ -71,9 +75,8 @@ public class Car implements Serializable {
   @Override
   public String toString() {
     return getClass().getSimpleName() +
-        "model='" + model + '\'' +
+        ": model='" + model + '\'' +
         ", maxSpeed=" + maxSpeed +
-        ", sellingPrice=" + sellingPrice +
-        '}';
+        ", sellingPrice=" + sellingPrice;
   }
 }

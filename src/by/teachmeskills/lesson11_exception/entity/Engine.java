@@ -4,8 +4,11 @@ import static java.lang.Math.*;
 
 import by.teachmeskills.lesson11_exception.exception.EvenNumberException;
 import by.teachmeskills.lesson11_exception.output.Printer;
+import java.io.Serializable;
 
-public final class Engine {
+public final class Engine implements Serializable {
+
+  private static final long serialVersionUID = -5953176735361137008L;
   private int indicator;
 
   public int getIndicator() {
