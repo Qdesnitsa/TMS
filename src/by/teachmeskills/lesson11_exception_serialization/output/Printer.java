@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson11_exception.output;
+package by.teachmeskills.lesson11_exception_serialization.output;
 
 public final class Printer {
 

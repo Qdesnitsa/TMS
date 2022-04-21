@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson11_exception.entity;
+package by.teachmeskills.lesson11_exception_serialization.entity;
 
-import by.teachmeskills.lesson11_exception.exception.EvenNumberException;
+import by.teachmeskills.lesson11_exception_serialization.exception.EvenNumberException;
 import java.io.Serializable;
 import java.util.Objects;
 

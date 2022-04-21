@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson11_exception.exception;
+package by.teachmeskills.lesson11_exception_serialization.exception;
 
-import by.teachmeskills.lesson11_exception.output.Printer;
+import by.teachmeskills.lesson11_exception_serialization.output.Printer;
 
 public class EvenNumberException extends Exception{
   private int number;

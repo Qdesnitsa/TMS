@@ -1,12 +1,12 @@
-package by.teachmeskills.lesson11_exception.serialization;
+package by.teachmeskills.lesson11_exception_serialization.serialization;
 
-import by.teachmeskills.lesson11_exception.entity.Car;
+import by.teachmeskills.lesson11_exception_serialization.entity.Car;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class ReadObject {
-  private static String fileSerializeFrom = "./src/by/teachmeskills/lesson11_exception/resource/car.bin";
+  private static String fileSerializeFrom = "./src/by/teachmeskills/lesson11_exception_serialization/resource/car.bin";
 
   public static void main(String[] args) {
     try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileSerializeFrom))) {
@@ -20,5 +20,4 @@ public class ReadObject {
       throw new RuntimeException("Class Car is not found", e);
     }
   }
-
 }

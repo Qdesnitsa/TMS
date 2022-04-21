@@ -1,9 +1,9 @@
-package by.teachmeskills.lesson11_exception.entity;
+package by.teachmeskills.lesson11_exception_serialization.entity;
 
 import static java.lang.Math.*;
 
-import by.teachmeskills.lesson11_exception.exception.EvenNumberException;
-import by.teachmeskills.lesson11_exception.output.Printer;
+import by.teachmeskills.lesson11_exception_serialization.exception.EvenNumberException;
+import by.teachmeskills.lesson11_exception_serialization.output.Printer;
 import java.io.Serializable;
 
 public final class Engine implements Serializable {
