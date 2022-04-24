@@ -10,10 +10,12 @@ public final class Writing {
   private Writing() {}
 
   public static void writeToFile(String filePath, List<String> list) {
+    StringBuilder dataForOutputFile = new StringBuilder();
     int counter = 0;
     try (FileWriter fileWriter = new FileWriter(filePath, true)) {
       for (String element : list) {
-        fileWriter.write(++counter + ". " + element.trim() + "\n");
+        dataForOutputFile.append(++counter).append(". ").append(element.trim()).append("\n");
+        fileWriter.write(String.valueOf(dataForOutputFile));
       }
     } catch (IOException e) {
       throw new RuntimeException("Error in writing to file", e);

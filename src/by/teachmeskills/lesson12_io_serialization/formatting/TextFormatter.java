@@ -63,15 +63,15 @@ public final class TextFormatter {
     String[][] word = obtainWordsInSentences(sent);
     List<String> list = new ArrayList<>();
     for (int i = 0; i < word.length; i++) {
-      if (TextFormatter.checkHasPalindrome(word[i]) ||
-          (TextFormatter.countWords(word[i]) >= minCountWords && TextFormatter.countWords(word[i]) <= maxCountWords)) {
+      if (checkHasPalindrome(word[i]) ||
+          (countWords(word[i]) >= minCountWords && countWords(word[i]) <= maxCountWords)) {
         list.add(sent[i]);
       }
     }
     return list;
   }
 
-  public static List<String> checkHasWords(String[] sentences, String[] words) {
+  public static List<String> checkSentHasWords(String[] sentences, String[] words) {
     List<String> list = new ArrayList<>();
     for (int i = 0; i < sentences.length; i++) {
       for (int j = 0; j < words.length; j++) {

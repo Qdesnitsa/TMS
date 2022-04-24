@@ -3,22 +3,22 @@ package by.teachmeskills.lesson12_io_serialization.printing;
 import java.util.List;
 
 public class Printer {
-  private static final String hasBlackWord = "Text contains words from black list. ";
-  private static final String quantity = "Quantity of sentences with black_list words equals: ";
-  private static final String noBlackWord = "Text does not contain words from black list";
+  private static final String HAS_BLACK_WORD = "Text contains words from black list. ";
+  private static final String QUANTITY = "Quantity of sentences with black_list words equals: ";
+  private static final String NO_BLACK_WORD = "Text does not contain words from black list";
 
   public static void printSentBlackList(List<String> list) {
     int counter = 0;
-    StringBuffer stb = new StringBuffer();
+    StringBuffer msgResultInfo = new StringBuffer();
     if (list.isEmpty()) {
-      stb.append(noBlackWord);
+      msgResultInfo.append(NO_BLACK_WORD);
     } else {
-      stb.append(hasBlackWord).append(quantity).append(list.size());
+      msgResultInfo.append(HAS_BLACK_WORD).append(QUANTITY).append(list.size());
       for (String elem : list) {
-        stb.append("\n").append(++counter).append(". ").append(elem.trim());
+        msgResultInfo.append("\n").append(++counter).append(". ").append(elem.trim());
       }
     }
-    System.out.println(stb);
+    System.out.println(msgResultInfo);
   }
 
 }
