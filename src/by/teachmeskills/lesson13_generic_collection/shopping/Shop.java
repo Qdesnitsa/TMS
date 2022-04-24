@@ -18,7 +18,7 @@ import java.util.TreeSet;
 public final class Shop implements Serializable {
 
   private static Map<Integer, Article> map;
-  private static TreeSet<Article> setSorted;
+  private static TreeSet<Article> sortedSet;
   private static Deque<Article> queue;
 
   private static Comparator priceComparator = new ArticlePriceComparator();
@@ -55,17 +55,17 @@ public final class Shop implements Serializable {
   }
 
   public static TreeSet<Article> sortPriceAsc() {
-    setSorted = new TreeSet<Article>(priceComparator);
+    sortedSet = new TreeSet<Article>(priceComparator);
     for (Entry<Integer, Article> articleIn : map.entrySet()) {
-      setSorted.add(articleIn.getValue());
+      sortedSet.add(articleIn.getValue());
     }
-    return setSorted;
+    return sortedSet;
   }
 
   public static TreeSet<Article> sortPriceDesc() {
     sortPriceAsc();
-    setSorted = (TreeSet<Article>) setSorted.descendingSet();
-    return setSorted;
+    sortedSet = (TreeSet<Article>) sortedSet.descendingSet();
+    return sortedSet;
   }
 
   public static Queue<Article> sortAddDesc() {
