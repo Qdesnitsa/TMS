@@ -1,4 +1,4 @@
-### ___TMS Task 13 GENERICS, COLLECTIONS___
+### ___TMS Task 13 Generics, Collections___
 ***
 Магазин
 
