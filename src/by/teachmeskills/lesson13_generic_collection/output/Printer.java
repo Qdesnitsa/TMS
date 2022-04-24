@@ -52,7 +52,7 @@ public final class Printer {
     System.out.println(ARTICLE_DELETE_INFO);
   }
 
-  private static final String ZERO_OPTION = "Operations available:\n";
+  private static final String ZERO_OPTION = "\nOperations available:\n";
   private static final String FIRST_OPTION = "1. Show all articles\n";
   private static final String SECOND_OPTION = "2. Add article(s)\n";
   private static final String THIRD_OPTION = "3. Delete article(s)\n";
@@ -80,7 +80,7 @@ public final class Printer {
     return choiceInt;
   }
 
-  private static final String SORT_PRICE_ASC = "1. Sort articles by price in ascending order\n";
+  private static final String SORT_PRICE_ASC = "\n1. Sort articles by price in ascending order\n";
   private static final String SORT_PRICE_DESC = "2. Sort articles by price in descending order\n";
   private static final String SORT_NEW_FIRST = "3. Show new articles first\n";
   private static final int MAX_NUMBER_OF_OPER2 = 3;

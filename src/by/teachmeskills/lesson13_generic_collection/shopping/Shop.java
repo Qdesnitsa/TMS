@@ -95,17 +95,20 @@ public final class Shop implements Serializable {
     switch (choice) {
       case 1:
         actionAfterChoice2();
+        actionAfterChoice();
         break;
       case 2:
         Printer.printElementsMap(addArticle(obtainParamOfArticle(InputData.obtainInputArticle())));
+        actionAfterChoice();
         break;
       case 3:
         Printer.printInstrToDelete();
         Printer.printElementsMap(deleteArticle(ValidInput.checkOverflowInt(InputData.obtainInput())));
+        actionAfterChoice();
         break;
       case 4:
         Printer.printElementsMap(modifyArticle(obtainParamOfArticle(InputData.obtainInputArticle())));
-        break;
+        actionAfterChoice();
       case 5:
         break;
     }
