@@ -5,8 +5,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-public class WriteObject {
+public final class WriteObject {
   private static String fileSerializeTo = "./src/by/teachmeskills/lesson11_exception_serialization/resource/car.bin";
+
+  private WriteObject() {}
 
   public static void main(String[] args) {
     Car car1 = new Car();

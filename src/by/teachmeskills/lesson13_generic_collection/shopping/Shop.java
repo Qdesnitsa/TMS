@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.TreeSet;
 
-public class Shop implements Serializable {
+public final class Shop implements Serializable {
 
   private static Map<Integer, Article> map;
   private static TreeSet<Article> setSorted;

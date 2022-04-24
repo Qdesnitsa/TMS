@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-public class ReadObject {
+public final class ReadObject {
   private static String fileSerializeFrom = "./src/by/teachmeskills/lesson11_exception_serialization/resource/car.bin";
+
+  private ReadObject() {}
 
   public static void main(String[] args) {
     try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileSerializeFrom))) {

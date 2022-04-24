@@ -4,7 +4,7 @@ import by.teachmeskills.lesson13_generic_collection.input.InputData;
 import by.teachmeskills.lesson13_generic_collection.output.Printer;
 import java.math.BigDecimal;
 
-public class ValidInput {
+public final class ValidInput {
   private static final BigDecimal objectMaxInt = BigDecimal.valueOf(Integer.MAX_VALUE);
   private static final BigDecimal objectMinInt = BigDecimal.valueOf(Integer.MIN_VALUE);
   private static String input;

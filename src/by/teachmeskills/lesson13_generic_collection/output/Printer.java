@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class Printer {
+public final class Printer {
   private static final String NO_ELEM_MSG = "List of articles is empty";
   private static final String INITIAL_MSG = "Choose operation: ";
   private static final String INVALID_VALUE = "Invalid input. Try again.";
@@ -18,10 +18,6 @@ public class Printer {
 
   public static void printInvalidInput() {
     System.out.println(INVALID_VALUE);
-  }
-
-  public static void printInstructions() {
-    System.out.println(INITIAL_MSG);
   }
 
   public static void printElementsMap(Map<Integer, Article> map) {

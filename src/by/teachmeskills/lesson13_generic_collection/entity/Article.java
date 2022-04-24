@@ -3,7 +3,7 @@ package by.teachmeskills.lesson13_generic_collection.entity;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Article implements Serializable {
+public final class Article implements Serializable {
 
   private static final long serialVersionUID = -1690447909860163236L;
   private int id;

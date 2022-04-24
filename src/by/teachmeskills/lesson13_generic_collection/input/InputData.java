@@ -3,7 +3,7 @@ package by.teachmeskills.lesson13_generic_collection.input;
 import by.teachmeskills.lesson13_generic_collection.output.Printer;
 import java.util.Scanner;
 
-public class InputData {
+public final class InputData {
 
   private static String input;
 

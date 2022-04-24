@@ -4,7 +4,7 @@ import by.teachmeskills.lesson11_exception_serialization.exception.EvenNumberExc
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Car implements Serializable {
+public final class Car implements Serializable {
 
   private static final long serialVersionUID = -6014008208280340074L;
   private String model;
