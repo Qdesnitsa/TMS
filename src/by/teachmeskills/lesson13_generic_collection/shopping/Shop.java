@@ -17,6 +17,7 @@ import java.util.TreeSet;
 
 public final class Shop implements Serializable {
 
+  private static final long serialVersionUID = -7055266736847453882L;
   private static Map<Integer, Article> map;
   private static TreeSet<Article> sortedSet;
   private static Deque<Article> queue;
@@ -81,7 +82,8 @@ public final class Shop implements Serializable {
     int paramNumber = 3;
     String[] param = parameters.split(PARAM_DELIMETER);
     while (!(param.length == paramNumber)) {
-      parameters = InputData.obtainInputArticle();
+      Printer.printInstrForArticle();
+      parameters = InputData.obtainInput();
       param = parameters.split(PARAM_DELIMETER);
     }
     int id = ValidInput.checkOverflowInt(param[0]);
@@ -98,7 +100,8 @@ public final class Shop implements Serializable {
         actionAfterChoice();
         break;
       case 2:
-        Printer.printElementsMap(addArticle(obtainParamOfArticle(InputData.obtainInputArticle())));
+        Printer.printInstrForArticle();
+        Printer.printElementsMap(addArticle(obtainParamOfArticle(InputData.obtainInput())));
         actionAfterChoice();
         break;
       case 3:
@@ -107,7 +110,8 @@ public final class Shop implements Serializable {
         actionAfterChoice();
         break;
       case 4:
-        Printer.printElementsMap(modifyArticle(obtainParamOfArticle(InputData.obtainInputArticle())));
+        Printer.printInstrForArticle();
+        Printer.printElementsMap(modifyArticle(obtainParamOfArticle(InputData.obtainInput())));
         actionAfterChoice();
       case 5:
         break;
