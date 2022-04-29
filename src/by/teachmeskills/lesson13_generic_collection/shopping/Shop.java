@@ -4,8 +4,11 @@ import by.teachmeskills.lesson13_generic_collection.comparator.ArticlePriceCompa
 import by.teachmeskills.lesson13_generic_collection.entity.Article;
 import by.teachmeskills.lesson13_generic_collection.input.InputData;
 import by.teachmeskills.lesson13_generic_collection.output.Printer;
+import by.teachmeskills.lesson13_generic_collection.shopping.action.ChoiceTypeTotal;
+import by.teachmeskills.lesson13_generic_collection.shopping.action.show.TypesHandler;
 import by.teachmeskills.lesson13_generic_collection.validation.ValidInput;
 import java.io.Serializable;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayDeque;
 import java.util.Comparator;
 import java.util.Deque;
@@ -56,7 +59,7 @@ public final class Shop implements Serializable {
   }
 
   public static TreeSet<Article> sortPriceAsc() {
-    sortedSet = new TreeSet<Article>(priceComparator);
+    sortedSet = new TreeSet<>(priceComparator);
     for (Entry<Integer, Article> articleIn : map.entrySet()) {
       sortedSet.add(articleIn.getValue());
     }
@@ -92,45 +95,18 @@ public final class Shop implements Serializable {
     return new Article(id, name, price);
   }
 
-  public static void actionAfterChoice() {
+  //enum vs switch-case
+  public static void actionAfterChoice()
+      throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
     int choice = Printer.showInstructions();
-    switch (choice) {
-      case 1:
-        actionAfterChoice2();
-        actionAfterChoice();
-        break;
-      case 2:
-        Printer.printInstrForArticle();
-        Printer.printElementsMap(addArticle(obtainParamOfArticle(InputData.obtainInput())));
-        actionAfterChoice();
-        break;
-      case 3:
-        Printer.printInstrToDelete();
-        Printer.printElementsMap(deleteArticle(ValidInput.checkOverflowInt(InputData.obtainInput())));
-        actionAfterChoice();
-        break;
-      case 4:
-        Printer.printInstrForArticle();
-        Printer.printElementsMap(modifyArticle(obtainParamOfArticle(InputData.obtainInput())));
-        actionAfterChoice();
-      case 5:
-        break;
-    }
+    ChoiceTypeTotal.getActionByType(choice).getAction().actionAfterChoice();
   }
 
-  public static void actionAfterChoice2() {
+  //map vs switch-case
+  public static void actionAfterChoiceShow() {
     int choice = Printer.showNextInstructions();
-    switch (choice) {
-      case 1:
-        Printer.printElementsSet(sortPriceAsc());
-        break;
-      case 2:
-        Printer.printElementsSet(sortPriceDesc());
-        break;
-      case 3:
-        Printer.printElementsQueue(sortAddDesc());
-        break;
-    }
+    TypesHandler types = new TypesHandler();
+    types.getType(choice).sortAfterShow();
   }
 }
 

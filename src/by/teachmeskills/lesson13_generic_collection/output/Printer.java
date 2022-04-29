@@ -1,12 +1,10 @@
 package by.teachmeskills.lesson13_generic_collection.output;
 
-import by.teachmeskills.lesson13_generic_collection.entity.Article;
 import by.teachmeskills.lesson13_generic_collection.validation.ValidInput;
+import java.util.Collection;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Queue;
 import java.util.Scanner;
-import java.util.TreeSet;
 
 public final class Printer {
   private static final String NO_ELEM_MSG = "List of articles is empty";
@@ -20,9 +18,9 @@ public final class Printer {
     System.out.println(INVALID_VALUE);
   }
 
-  public static void printElementsMap(Map<Integer, Article> map) {
+  public static <K,V> void printElementsMap(Map<K, V> map) {
     if (!map.isEmpty()) {
-      for (Entry<Integer, Article> article : map.entrySet()) {
+      for (Entry<K, V> article : map.entrySet()) {
         System.out.println(article);
       }
     } else{
@@ -30,14 +28,8 @@ public final class Printer {
     }
   }
 
-  public static void printElementsSet(TreeSet<Article> set) {
-    for (Article article : set) {
-      System.out.println(article);
-    }
-  }
-
-  public static void printElementsQueue(Queue<Article> queue) {
-    for (Article article : queue) {
+  public static <E> void printElements(Collection<E> collection) {
+    for (E article : collection) {
       System.out.println(article);
     }
   }
