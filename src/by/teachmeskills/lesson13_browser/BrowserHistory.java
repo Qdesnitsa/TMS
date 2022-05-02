@@ -44,16 +44,16 @@ public class BrowserHistory {
   }
 
   public static void main(String[] args) {
-    BrowserHistory bh = new BrowserHistory("1");
-    bh.visit("2");
-    bh.visit("3");
-    bh.visit("4");
-    bh.visit("5");
-    bh.back(2);
-    bh.visit("6");
-    bh.forward(1);
-    bh.visit("7");
-    bh.back(10);
+    BrowserHistory browserHistory = new BrowserHistory("1");
+    browserHistory.visit("2");
+    browserHistory.visit("3");
+    browserHistory.visit("4");
+    browserHistory.visit("5");
+    browserHistory.back(2);
+    browserHistory.visit("6");
+    browserHistory.forward(1);
+    browserHistory.visit("7");
+    browserHistory.back(10);
     System.out.println(list);
     System.out.println(list.get(currentPosition));
   }
