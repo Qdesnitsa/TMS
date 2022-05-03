@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.teachmeskills.by/books"
+  xmlns:b="http://www.teachmeskills.by/books">
+
+  <element name="books">
+    <complexType>
+      <sequence>
+        <element name="book" type="b:Book" minOccurs="1" maxOccurs="unbounded" />
+      </sequence>
+    </complexType>
+  </element>
+  
+  <complexType name="Book">
+    <sequence>
+      <element name="title" type="string" />
+      <element name="year" type="integer" />
+      <element name="genre" type="string" />
+      <element name="author" type="b:Author" />
+    </sequence>
+
+    <attribute name="id" type="b:ID" use="required" />
+
+    <attribute name="language" use="optional">
+      <simpleType>
+        <restriction base="string">
+          <enumeration value="English"></enumeration>
+          <enumeration value="Russian"></enumeration>
+          <enumeration value="German"></enumeration>
+        </restriction>
+      </simpleType>
+    </attribute>
+  </complexType>
+
+  <simpleType name="ID">
+    <restriction base="integer">
+      <pattern value="[0-9]+" />
+    </restriction>
+  </simpleType>
+
+  <complexType name="Author">
+    <sequence>
+      <element name="name" type="string" />
+      <element name="year" type="integer" />
+      <element name="place" type="string" />
+    </sequence>
+  </complexType>
+</schema>

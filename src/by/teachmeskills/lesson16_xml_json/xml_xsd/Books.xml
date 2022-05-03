@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:books xmlns:b="http://www.teachmeskills.by/books"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.teachmeskills.by/books books.xsd">
+<book id="01">
+  <title>The Little Prince</title>
+  <year>1943</year>
+  <genre>Novella</genre>
+  <author>
+    <name>Antoine de Saint-Exupery</name>
+    <year>1900</year>
+    <place>France</place>
+  </author>
+</book>
+<book id="02">
+  <title>A Tale of Two Cities</title>
+  <year>1859</year>
+  <genre>Historical fiction</genre>
+  <author>
+    <name>Charles Dickens</name>
+    <year>1812</year>
+    <place>England</place>
+  </author>
+</book>
+<book id="03">
+    <title>Harry Potter and the Philosopher's Stone</title>
+    <year>1997</year>
+    <genre>Fantasy</genre>
+    <author>
+      <name>J. K. Rowling</name>
+      <year>1965</year>
+      <place>England</place>
+    </author>
+</book>
+</b:books>
