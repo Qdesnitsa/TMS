@@ -10,9 +10,12 @@ import by.teachmeskills.lesson13_generic_collection.validation.ValidInput;
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Deque;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Queue;
@@ -22,10 +25,11 @@ public final class Shop implements Serializable {
 
   private static final long serialVersionUID = -7055266736847453882L;
   private static Map<Integer, Article> map;
-  private static TreeSet<Article> sortedSet;
+  //private static TreeSet<Article> sortedSet;
   private static Deque<Article> queue;
+  private static List<Map.Entry<Integer, Article>> list;
 
-  private static Comparator priceComparator = new ArticlePriceComparator();
+  //private static Comparator priceComparator = new ArticlePriceComparator();
 
   public Shop() {
     map = new LinkedHashMap<>();
@@ -58,19 +62,31 @@ public final class Shop implements Serializable {
     return map;
   }
 
-  public static TreeSet<Article> sortPriceAsc() {
-    sortedSet = new TreeSet<>(priceComparator);
-    for (Entry<Integer, Article> articleIn : map.entrySet()) {
-      sortedSet.add(articleIn.getValue());
-    }
-    return sortedSet;
+  public static List<Map.Entry<Integer, Article>> sortPriceAsc() {
+    list = new ArrayList(map.entrySet());
+    list.sort((Map.Entry<Integer, Article> art1, Map.Entry<Integer, Article> art2) -> art1.getValue().getPrice() - art2.getValue().getPrice());
+    return list;
   }
 
-  public static TreeSet<Article> sortPriceDesc() {
-    sortPriceAsc();
-    sortedSet = (TreeSet<Article>) sortedSet.descendingSet();
-    return sortedSet;
+  public static List<Map.Entry<Integer, Article>> sortPriceDesc() {
+    list = new ArrayList(map.entrySet());
+    list.sort((Map.Entry<Integer, Article> art1, Map.Entry<Integer, Article> art2) -> art2.getValue().getPrice() - art1.getValue().getPrice());
+    return list;
   }
+
+//  public static TreeSet<Article> sortPriceAsc() {
+//    sortedSet = new TreeSet<>(priceComparator);
+//    for (Entry<Integer, Article> articleIn : map.entrySet()) {
+//      sortedSet.add(articleIn.getValue());
+//    }
+//    return sortedSet;
+//  }
+//
+//  public static TreeSet<Article> sortPriceDesc() {
+//    sortPriceAsc();
+//    sortedSet = (TreeSet<Article>) sortedSet.descendingSet();
+//    return sortedSet;
+//  }
 
   public static Queue<Article> sortAddDesc() {
     queue = new ArrayDeque<>();
