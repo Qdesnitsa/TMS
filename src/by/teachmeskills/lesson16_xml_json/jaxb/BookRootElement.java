@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlType;
     "book"
 })
 @XmlRootElement(name = "books")
-public class Books {
+public class BookRootElement {
 
   @XmlElement(required = true)
   protected List<Book> book;

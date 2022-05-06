@@ -8,11 +8,11 @@ import javax.xml.bind.Unmarshaller;
 public class Main {
   public static void main(String[] args) throws JAXBException {
 
-    File file = new File("./src/by/teachmeskills/lesson16_xml_json/jaxb/Books.xml");
+    File file = new File("./src/by/teachmeskills/lesson16_xml_json/jaxb/resources/books.xml");
     JAXBContext jaxbContext = JAXBContext.newInstance("by.teachmeskills.lesson16_xml_json.jaxb");
 
     Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-    Books books = (Books) jaxbUnmarshaller.unmarshal(file);
+    BookRootElement books = (BookRootElement) jaxbUnmarshaller.unmarshal(file);
 
     for (Book book : books.getBook()) {
       System.out.println(book.getTitle());

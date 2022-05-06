@@ -13,7 +13,7 @@ import org.xml.sax.InputSource;
 
 public class XJCENtityGeneration {
 
-	private static final String schemaFile = "./src/by/teachmeskills/lesson16_xml_json/jaxb/Books.xsd";
+	private static final String schemaFile = "./src/by/teachmeskills/lesson16_xml_json/jaxb/books.xsd";
 	private static final String entityPackageName = "by/teachmeskills/lesson16_xml_json/jaxb";
 	private static final String targetPath = "./src/by/";
 

@@ -9,8 +9,8 @@ public class ObjectFactory {
     public ObjectFactory() {
     }
 
-    public Books createNotes() {
-        return new Books();
+    public BookRootElement createNotes() {
+        return new BookRootElement();
     }
 
     public Book createNote() {
