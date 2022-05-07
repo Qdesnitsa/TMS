@@ -8,16 +8,16 @@ import by.teachmeskills.lesson13_generic_collection.shopping.action.impl.ShowArt
 import java.lang.reflect.InvocationTargetException;
 
 public enum ChoiceTypeTotal {
-    SHOW(1, ShowArticleIChoiceImpl.class),
-    ADD(2, AddArticleIChoiceImpl.class),
-    DELETE(3, DelArticleIChoiceImpl.class),
-    EDIT(4, EditArticleIChoiceImpl.class),
-    EXIT(5, ExitProgram.class);
+    SHOW(1, new ShowArticleIChoiceImpl()),
+    ADD(2, new AddArticleIChoiceImpl()),
+    DELETE(3, new DelArticleIChoiceImpl()),
+    EDIT(4, new EditArticleIChoiceImpl()),
+    EXIT(5, new ExitProgram());
 
     private int typeChoice;
-    private Class<? extends IChoice> action;
+    private IChoice action;
 
-    ChoiceTypeTotal(int typeChoice, Class<? extends IChoice> action) {
+    ChoiceTypeTotal(int typeChoice, IChoice action) {
       this.typeChoice = typeChoice;
       this.action = action;
     }
@@ -33,7 +33,7 @@ public enum ChoiceTypeTotal {
 
   public IChoice getAction()
       throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-    return action.getDeclaredConstructor().newInstance();
+    return action;
   }
 }
 

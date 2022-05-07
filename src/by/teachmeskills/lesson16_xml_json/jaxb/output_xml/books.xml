@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:books xmlns:ns2="http://www.teachmeskills.by/books">
+    <book id="6">
+        <title>The Lion, the Witch and the Wardrobe</title>
+        <year>1950</year>
+        <genre>Fantasy, Children's fiction</genre>
+        <author>C. S. Lewis</author>
+    </book>
+</ns2:books>

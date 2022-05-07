@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<b:books xmlns:b="http://www.teachmeskills.by/books"
+<b:books xmlns:b="http://www.teachmeskills.by/books1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.teachmeskills.by/books books.xsd">
+  xsi:schemaLocation="http://www.teachmeskills.by/books1 books.xsd">
 <book id="01">
   <title>The Little Prince</title>
   <year>1943</year>

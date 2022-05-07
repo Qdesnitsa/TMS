@@ -41,7 +41,6 @@ public class XJCENtityGeneration {
         try (PrintStream status = new PrintStream(new ByteArrayOutputStream())) {
             jcm.build(targetPath, status);
         }
-
         return jcm;
     }
 }

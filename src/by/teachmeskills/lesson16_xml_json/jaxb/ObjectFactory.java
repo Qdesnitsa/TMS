@@ -1,4 +1,3 @@
-
 package by.teachmeskills.lesson16_xml_json.jaxb;
 
 import javax.xml.bind.annotation.XmlRegistry;
@@ -9,11 +8,11 @@ public class ObjectFactory {
     public ObjectFactory() {
     }
 
-    public BookRootElement createNotes() {
+    public BookRootElement createBooks() {
         return new BookRootElement();
     }
 
-    public Book createNote() {
+    public Book createBook() {
         return new Book();
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="http://www.teachmeskills.by/books"
-  xmlns:b="http://www.teachmeskills.by/books">
+  targetNamespace="http://www.teachmeskills.by/books1"
+  xmlns:b="http://www.teachmeskills.by/books1">
 
   <element name="books">
     <complexType>
