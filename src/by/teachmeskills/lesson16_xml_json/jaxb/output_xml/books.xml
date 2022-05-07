@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:books xmlns:ns2="http://www.teachmeskills.by/books">
+    <book id="1">
+        <title>The Little Prince</title>
+        <year>1943</year>
+        <genre>Novella</genre>
+        <author>Antoine de Saint-Exupery</author>
+    </book>
+    <book id="2">
+        <title>A Tale of Two Cities</title>
+        <year>1859</year>
+        <genre>Historical fiction</genre>
+        <author>Charles Dickens</author>
+    </book>
+    <book id="3">
+        <title>Harry Potter and the Philosopher's Stone</title>
+        <year>1997</year>
+        <genre>Fantasy</genre>
+        <author>J. K. Rowling</author>
+    </book>
+    <book id="4">
+        <title>And Then There Were None</title>
+        <year>1939</year>
+        <genre>Mystery</genre>
+        <author>Agatha Christie</author>
+    </book>
+    <book id="5">
+        <title>Dream of the Red Chamber</title>
+        <year>1791</year>
+        <genre>Family saga</genre>
+        <author>Cao Xueqin</author>
+    </book>
     <book id="6">
         <title>The Lion, the Witch and the Wardrobe</title>
         <year>1950</year>

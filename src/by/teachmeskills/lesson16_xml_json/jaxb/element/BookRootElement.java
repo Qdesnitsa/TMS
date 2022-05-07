@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson16_xml_json.jaxb;
+package by.teachmeskills.lesson16_xml_json.jaxb.element;
 
 import java.util.ArrayList;
 import java.util.List;

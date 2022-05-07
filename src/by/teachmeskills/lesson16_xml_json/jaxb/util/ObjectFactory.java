@@ -1,5 +1,7 @@
-package by.teachmeskills.lesson16_xml_json.jaxb;
+package by.teachmeskills.lesson16_xml_json.jaxb.util;
 
+import by.teachmeskills.lesson16_xml_json.jaxb.element.Book;
+import by.teachmeskills.lesson16_xml_json.jaxb.element.BookRootElement;
 import javax.xml.bind.annotation.XmlRegistry;
 
 @XmlRegistry

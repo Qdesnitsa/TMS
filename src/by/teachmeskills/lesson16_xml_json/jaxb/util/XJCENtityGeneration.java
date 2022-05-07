@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson16_xml_json.jaxb;
+package by.teachmeskills.lesson16_xml_json.jaxb.util;
 
 import com.sun.codemodel.JCodeModel;
 import com.sun.tools.xjc.api.S2JJAXBModel;
@@ -13,8 +13,8 @@ import org.xml.sax.InputSource;
 
 public class XJCENtityGeneration {
 
-	private static final String schemaFile = "./src/by/teachmeskills/lesson16_xml_json/jaxb/books.xsd";
-	private static final String entityPackageName = "by/teachmeskills/lesson16_xml_json/jaxb";
+	private static final String schemaFile = "./src/by/teachmeskills/lesson16_xml_json/jaxb/resources/books.xsd";
+	private static final String entityPackageName = "by/teachmeskills/lesson16_xml_json/jaxb/util";
 	private static final String targetPath = "./src/by/";
 
 	
