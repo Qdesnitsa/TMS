@@ -4,13 +4,11 @@ import static by.teachmeskills.lesson13_generic_collection.shopping.Shop.actionA
 
 import by.teachmeskills.lesson13_generic_collection.shopping.Shop;
 import by.teachmeskills.lesson13_generic_collection.shopping.action.IChoice;
-import java.lang.reflect.InvocationTargetException;
 
 public final class ShowArticleIChoiceImpl implements IChoice {
 
   @Override
-  public void actionAfterChoice()
-      throws InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchMethodException {
+  public void actionAfterChoice() {
     actionAfterChoiceShow();
     Shop.actionAfterChoice();
   }

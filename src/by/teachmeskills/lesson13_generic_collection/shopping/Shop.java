@@ -8,7 +8,6 @@ import by.teachmeskills.lesson13_generic_collection.shopping.action.ChoiceTypeTo
 import by.teachmeskills.lesson13_generic_collection.shopping.action.show.TypesHandler;
 import by.teachmeskills.lesson13_generic_collection.validation.ValidInput;
 import java.io.Serializable;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -112,8 +111,7 @@ public final class Shop implements Serializable {
   }
 
   //enum vs switch-case
-  public static void actionAfterChoice()
-      throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException {
+  public static void actionAfterChoice() {
     int choice = Printer.showInstructions();
     ChoiceTypeTotal.getActionByType(choice).getAction().actionAfterChoice();
   }

@@ -5,7 +5,6 @@ import by.teachmeskills.lesson13_generic_collection.shopping.action.impl.DelArti
 import by.teachmeskills.lesson13_generic_collection.shopping.action.impl.EditArticleIChoiceImpl;
 import by.teachmeskills.lesson13_generic_collection.shopping.action.impl.ExitProgram;
 import by.teachmeskills.lesson13_generic_collection.shopping.action.impl.ShowArticleIChoiceImpl;
-import java.lang.reflect.InvocationTargetException;
 
 public enum ChoiceTypeTotal {
     SHOW(1, new ShowArticleIChoiceImpl()),
@@ -31,8 +30,7 @@ public enum ChoiceTypeTotal {
       throw new RuntimeException("Incorrect input.");
     }
 
-  public IChoice getAction()
-      throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+  public IChoice getAction() {
     return action;
   }
 }
