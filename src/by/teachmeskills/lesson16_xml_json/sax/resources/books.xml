@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:books xmlns:b="http://www.teachmeskills.by/books"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.teachmeskills.by/books books.xsd">
+<book id="01">
+  <title>The Little Prince</title>
+  <year>1943</year>
+  <genre>Novella</genre>
+  <author>Antoine de Saint-Exupery</author>
+</book>
+<book id="02">
+  <title>A Tale of Two Cities</title>
+  <year>1859</year>
+  <genre>Historical fiction</genre>
+  <author>Charles Dickens</author>
+</book>
+<book id="03">
+    <title>Harry Potter and the Philosopher's Stone</title>
+    <year>1997</year>
+    <genre>Fantasy</genre>
+    <author>J. K. Rowling</author>
+</book>
+  <book id="04">
+    <title>And Then There Were None</title>
+    <year>1939</year>
+    <genre>Mystery</genre>
+    <author>Agatha Christie</author>
+  </book>
+  <book id="05">
+    <title>Dream of the Red Chamber</title>
+    <year>1791</year>
+    <genre>Family saga</genre>
+    <author>Cao Xueqin</author>
+  </book>
+</b:books>
