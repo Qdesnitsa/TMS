@@ -1,0 +1,6 @@
+* { display: block; }
+book {border-bottom: 1px dotted grey; }
+title, year, genre, price { display: inline; margin: 1ex; }
+title { font-weight: bold; color: blue; }
+name { font-weight: bold; color: red; }
+name, year, place { display: inline; margin: 1ex; }

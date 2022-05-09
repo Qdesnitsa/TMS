@@ -17,6 +17,7 @@
       <element name="year" type="integer" />
       <element name="genre" type="string" />
       <element name="author" type="b:Author" />
+      <element name="price" type="integer" />
     </sequence>
 
     <attribute name="id" type="b:ID" use="required" />
