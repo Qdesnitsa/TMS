@@ -21,7 +21,7 @@ public class MainSAX {
 
     BookSaxHandler handler = new BookSaxHandler();
     reader.setContentHandler(handler);
-    reader.parse(new InputSource("src/by/teachmeskills/lesson16_xml_json/sax/resources/books.xml"));
+    reader.parse(new InputSource("src/by/teachmeskills/lesson16_xml_json/resources/books.xml"));
 
     List<Book> list = handler.getBookList();
 

@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson16_xml_json.sax.entity;
+package by.teachmeskills.lesson16_xml_json.stax.entity;
 
 public class Book {
   private int id;
@@ -48,4 +48,5 @@ public class Book {
   public void setAuthor(String author) {
     this.author = author;
   }
+
 }

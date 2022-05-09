@@ -11,7 +11,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
 public class Marshal_Unmarshal {
-  static BookRootElement books;
+  private BookRootElement books;
 
   public void marshal() throws JAXBException, FileNotFoundException {
     JAXBContext context = JAXBContext.newInstance(BookRootElement.class);
@@ -22,7 +22,7 @@ public class Marshal_Unmarshal {
     //marshaller.marshal(books,System.out);
   }
 
-  public static Book createBook(String title, int year, String genre, String author, int id) {
+  public Book createBook(String title, int year, String genre, String author, int id) {
     Book book = new Book();
     book.setTitle(title);
     book.setYear(year);
@@ -33,7 +33,7 @@ public class Marshal_Unmarshal {
   }
 
   public void unmarshal() throws JAXBException {
-    File file = new File("./src/by/teachmeskills/lesson16_xml_json/jaxb/resources/books.xml");
+    File file = new File("./src/by/teachmeskills/lesson16_xml_json/resources/books.xml");
     JAXBContext jaxbContext = JAXBContext.newInstance("by.teachmeskills.lesson16_xml_json.jaxb.util");
 
     Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

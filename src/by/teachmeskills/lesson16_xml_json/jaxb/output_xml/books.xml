@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:books xmlns:ns2="http://www.teachmeskills.by/books">
+<b:books xmlns:b="http://www.teachmeskills.by/books">
     <book id="1">
         <title>The Little Prince</title>
         <year>1943</year>
@@ -36,4 +36,4 @@
         <genre>Fantasy, Children's fiction</genre>
         <author>C. S. Lewis</author>
     </book>
-</ns2:books>
+</b:books>
