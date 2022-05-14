@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson14_stream_api.task01;
+package by.teachmeskills.lesson14_stream_api.task01.main;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,23 +8,17 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Task01 {
+public class Task01Main {
 
   public static void main(String[] args) throws IllegalAccessException {
     List<String> listWithNull = new ArrayList<>();
     listWithNull.addAll(Arrays.asList("a1", "a2", "a3", null, null, "a1"));
-//    List<Integer> listEmpty = new ArrayList<>();
-//    List<String> listWithNullStartEndStr = new ArrayList<>();
-//    listWithNullStartEndStr.addAll(Arrays.asList(null,"a1", "a2", "a3", null, null, "a10",null));
 
     Stream<String> streamWithNullStr;
-//    Stream<Integer> streamEmptyInt;
-//    Stream<String> streamNullStartEndStr;
 
     // 1. Решение
     System.out.println("Task1.1: ");
-    String targetValue = "a1";
-    int quantityTargetValue = countTargetValue(listWithNull, targetValue);
+    int quantityTargetValue = countTargetValue(listWithNull, "a1");
     System.out.println(quantityTargetValue);
 
     // 2. Решение
@@ -41,29 +35,24 @@ public class Task01 {
 
     // 4. Решение
     System.out.println("Task1.4: ");
-    String targetValue2 = "a3";
     streamWithNullStr = (Stream<String>) collectionAsStream(listWithNull);
-    String tarVal2 = obtainTargetValue(streamWithNullStr, targetValue2);
+    String tarVal2 = obtainTargetValue(streamWithNullStr, "a3");
     System.out.println(tarVal2);
 
     // 5. Решение
     System.out.println("Task1.5: ");
-    Long targetPlace = 3L;
     streamWithNullStr = (Stream<String>) collectionAsStream(listWithNull);
-    obtainNElement(streamWithNullStr,targetPlace);
+    obtainNElement(streamWithNullStr,3L);
 
     // 6. Решение
     System.out.println("Task1.6: ");
-    targetPlace = 3L;
-    Long quantityElements = 2L;
     streamWithNullStr = (Stream<String>) collectionAsStream(listWithNull);
-    obtainExactNumberElement(streamWithNullStr,targetPlace,quantityElements);
+    obtainExactNumberElement(streamWithNullStr,3L,2L);
 
     // 7. Решение
     System.out.println("Task1.7: ");
-    String targetElem = "a1";
     streamWithNullStr = (Stream<String>) collectionAsStream(listWithNull);
-    obtainAllTargetElem(streamWithNullStr,targetElem);
+    obtainAllTargetElem(streamWithNullStr,"a1");
   }
 
   ////////////////////////////////////////////////////////////////
@@ -75,44 +64,58 @@ public class Task01 {
 
   // 1. Вернуть количество вхождений объекта «a1».
   public static <T> int countTargetValue(List<?> list, T targetValue) {
-    int quantityTargetValue = (int) collectionAsStream(list).filter(
-        element -> element.equals(targetValue)).count();
-    
+    int quantityTargetValue = (int) collectionAsStream(list)
+        .filter(element -> element.equals(targetValue))
+        .count();
     return quantityTargetValue;
   }
 
   // 2. Вернуть первый элемент коллекции или 0, если коллекция пуста.
   public static <T> T obtainFirstTargetValue(Stream<T> stream, T replaceValue) {
-   T firstTarget = stream.findFirst().orElse(replaceValue);
+   T firstTarget = stream
+       .findFirst()
+       .orElse(replaceValue);
    return (T) firstTarget;
   }
 
   // 3. Вернуть последний элемент коллекции или «empty», если коллекция пуста.
   public static <T> T obtainLastTargetValue(Stream<T> stream, T replaceValue) {
-    T lastTarget = stream.reduce((x,y) -> y).orElse(replaceValue);
+    T lastTarget = stream
+        .reduce((x,y) -> y)
+        .orElse(replaceValue);
     return lastTarget;
   }
 
   // 4. Найти элемент в коллекции равный «a3» или кинуть ошибку.
   public static <T> T obtainTargetValue(Stream<T> stream, T targetValue)
       throws IllegalAccessException {
-    Optional<T> isInList = stream.filter(s->s.equals(targetValue)).findAny();
+    Optional<T> isInList = stream
+        .filter(s->s.equals(targetValue))
+        .findAny();
     return isInList.orElseThrow(IllegalAccessException::new);
   }
 
   // 5. Вернуть третий элемент коллекции по порядку.
   public static <T> void obtainNElement(Stream<T> stream, Long targetPlace) {
-    stream.skip(--targetPlace).limit(1).forEach(s-> System.out.println(s));
+    stream
+        .skip(--targetPlace)
+        .limit(1)
+        .forEach(System.out::println);
   }
 
-  // 6. Вернуть два элемента начиная со второго - [a2, a3].
+  // 6. Вернуть два элемента начиная со второго.
   public static <T> void obtainExactNumberElement(Stream<T> stream, Long targetPlace, Long quantityElements) {
-    stream.skip(--targetPlace).limit(quantityElements).forEach(s-> System.out.println(s));
+    stream
+        .skip(--targetPlace)
+        .limit(quantityElements)
+        .forEach(System.out::println);
   }
 
   // 7. Выбрать все элементы по шаблону.
   public static <T> void obtainAllTargetElem(Stream<T> stream, T targetElem) {
-    List<T> listAfterFilter = stream.filter(s->s.equals(targetElem)).collect(Collectors.toList());
+    List<T> listAfterFilter = stream
+        .filter(s->s.equals(targetElem))
+        .collect(Collectors.toList());
     System.out.println(listAfterFilter);
   }
 }
