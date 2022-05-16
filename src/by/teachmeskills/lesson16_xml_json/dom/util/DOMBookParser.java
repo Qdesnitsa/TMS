@@ -1,5 +1,6 @@
-package by.teachmeskills.lesson16_xml_json.dom.entity;
+package by.teachmeskills.lesson16_xml_json.dom.util;
 
+import by.teachmeskills.lesson16_xml_json.dom.entity.Book;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

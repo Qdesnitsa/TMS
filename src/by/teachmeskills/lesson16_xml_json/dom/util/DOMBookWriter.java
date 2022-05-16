@@ -1,6 +1,5 @@
-package by.teachmeskills.lesson16_xml_json.dom.entity;
+package by.teachmeskills.lesson16_xml_json.dom.util;
 
-import com.sun.xml.xsom.impl.Ref.Attribute;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
@@ -16,7 +15,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class DOMBookWriter {
-  public static void domWriter(String fileTo)
+  public static void domWrite(String fileTo)
       throws ParserConfigurationException, TransformerException, IOException {
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     factory.setNamespaceAware(true);
@@ -25,7 +24,7 @@ public class DOMBookWriter {
 
     Element books = document.createElementNS("http://www.teachmeskills.by/books","books");
     books.setPrefix("b");
-    books.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance","xsi:schemaLocation","http://www.teachmeskills.by/books ../../../resources/books.xsd");
+    books.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance","xsi:schemaLocation","http://www.teachmeskills.by/books ../../resources/books.xsd");
 
     Element book = document.createElement("book");
     book.setAttribute("id", "01");
