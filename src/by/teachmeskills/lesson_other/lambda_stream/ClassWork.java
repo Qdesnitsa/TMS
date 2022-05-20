@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class Test {
+public class ClassWork {
 
   public static void main(String[] args) {
     Hobby hobby1 = new Hobby("IT", new Random().nextInt(11));
