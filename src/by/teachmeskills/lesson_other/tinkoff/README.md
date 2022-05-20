@@ -1,4 +1,4 @@
-### ___TMS Task 13 Generics, Collections___
+### ___TMS Task Tinkoff Trial___
 ***
 Пробное задание на прохождение тест-бота Tinkoff
 
