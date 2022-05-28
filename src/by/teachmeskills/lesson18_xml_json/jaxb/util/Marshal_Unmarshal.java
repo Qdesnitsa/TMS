@@ -18,7 +18,7 @@ public class Marshal_Unmarshal {
     Marshaller marshaller = context.createMarshaller();
     marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
     books.getBook().add(createBook("The Lion, the Witch and the Wardrobe",1950,"Fantasy, Children's fiction","C. S. Lewis",6));
-    marshaller.marshal(books, new FileOutputStream("./src/by/teachmeskills/lesson16_xml_json/jaxb/output_xml/books.xml"));
+    marshaller.marshal(books, new FileOutputStream("./src/by/teachmeskills/lesson18_xml_json/jaxb/output_xml/books.xml"));
     //marshaller.marshal(books,System.out);
   }
 
@@ -33,15 +33,15 @@ public class Marshal_Unmarshal {
   }
 
   public void unmarshal() throws JAXBException {
-    File file = new File("./src/by/teachmeskills/lesson16_xml_json/resources/books.xml");
-    JAXBContext jaxbContext = JAXBContext.newInstance("by.teachmeskills.lesson16_xml_json.jaxb.util");
+    File file = new File("./src/by/teachmeskills/lesson18_xml_json/resources/books.xml");
+    JAXBContext jaxbContext = JAXBContext.newInstance("by.teachmeskills.lesson18_xml_json.jaxb.util");
 
     Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
     books = (BookRootElement) jaxbUnmarshaller.unmarshal(file);
 
-//    for (Book book : books.getBook()) {
-//      System.out.println(book.getTitle());
-//    }
+    for (Book book : books.getBook()) {
+      System.out.println(book.getTitle());
+    }
   }
 
 }

@@ -34,6 +34,7 @@ public class MainJDBC {
 
         String sql = "INSERT INTO books(title,year,genre,author) VALUES(?,?,?,?)";
         PreparedStatement ps = con.prepareStatement(sql);
+        int countRows = 0;
         for (int i = 0; i < list.size(); i++) {
           //ps.setInt(1,i);
           ps.setString(1, list.get(i).getTitle());
@@ -41,12 +42,14 @@ public class MainJDBC {
           ps.setString(3, list.get(i).getGenre());
           ps.setString(4, list.get(i).getAuthor());
           ps.executeUpdate();
+          countRows++;
         }
+        System.out.println(countRows);
 
         Statement st = con.createStatement();
         ResultSet rSelect = st.executeQuery("SELECT * from books");
         while(rSelect.next()) {
-          System.out.println(rSelect.getString(2) + " " + rSelect.getString(3) + " " + rSelect.getString(4));
+          System.out.println(rSelect.getString("title") + " " + rSelect.getString(3) + " " + rSelect.getString(4));
         }
       }
     }
