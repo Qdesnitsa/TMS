@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson20_jdbc.main;
+package by.teachmeskills.lesson20_jdbc.connection;
 
 import by.teachmeskills.lesson18_xml_json.stax.entity.Book;
 import by.teachmeskills.lesson18_xml_json.stax.util.StAXBookParser;
