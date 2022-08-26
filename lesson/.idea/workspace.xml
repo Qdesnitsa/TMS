@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lesson:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6fa2384-a6a4-43be-a229-f92e87e016f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/entity/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/entity/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/exception/EvenNumberException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/output/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/resource/car.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/serialization/ReadObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson11_exception_serialization/serialization/WriteObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/formatting/TextFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/main/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/main/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/main/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/printing/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/reading/Reading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/black_list_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/input_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/input_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/output_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/output_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/resource/output_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson12_io_serialization/writing/Writing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/comparator/ArticleNameComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/comparator/ArticlePriceComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/entity/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/input/InputData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/output/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/Shop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/ChoiceTypeTotal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/IChoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/impl/AddArticleIChoiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/impl/DelArticleIChoiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/impl/EditArticleIChoiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/impl/ExitProgram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/impl/ShowArticleIChoiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/show/IChoiceShow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/show/TypesHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/show/impl/SortAddDescIChoiceShowImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/show/impl/SortPriceAscIChoiceShowImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/shopping/action/show/impl/SortPriceDescIChoiceShowImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson13_generic_collection/validation/ValidInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task01/main/Task01Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task02/entity/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task02/entity/Hobby.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task02/entity/People.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task02/main/Task02Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task03/main/Task03Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task04/main/Task04Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson14_15_lambda_stream/task05/main/Task05Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/dom/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/dom/main/MainDOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/dom/output_xml/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/dom/util/DOMBookParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/dom/util/DOMBookWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/element/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/element/BookRootElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/element/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/main/MainJAXB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/output_xml/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/util/Marshal_Unmarshal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/util/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jaxb/util/XJCENtityGeneration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jdom/JDOMBookParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jdom/JDOMCreateXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/jdom/output_books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/json/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/json/Converter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/json/MainJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/json/output_book.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/resources/books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/resources/books.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/sax/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/sax/main/MainSAX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/sax/util/BookSaxHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/sax/util/BookTagName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/stax/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/stax/main/MainStAX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/stax/util/BookTagName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/stax/util/StAXBookParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/validation/XSDValidation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/xml_xsd_xslt/Books.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/xml_xsd_xslt/Books.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/xml_xsd_xslt/Books.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson18_xml_json/xml_xsd_xslt/Books.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/ThreadExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/ThreadExampleVolatile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/cafe/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/cafe/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/restaurant/Collector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/restaurant/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/restaurant/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/restaurant/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/other/restaurant/Waiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task01/MyThreadExtend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task02/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task02/MyThreadImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task03/MyThreadImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task04/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task04/OperationWithArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task05/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task05/SaveAsThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson19_multithreading/task05/output_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection/MainJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/ConnectionPoolException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/DBParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/DBResourceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/connection_pool/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/connection/DemoConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/connection/JDBCConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/demoConnection/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/repository/BaseDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/repository/PersonDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson20_jdbc/testdb/repository/impl/PersonDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/calculation/CalculatorSuper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/calculation/ICalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/entity/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/exception/DivisionByZeroException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/main/CalculatorMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/output/OutputConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/util/InputScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/util/ParserOfUserStringInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/util/PatternInvalidInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/util/PriorityOfOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/util/ValidInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/java/by/tms/calculator/web/servlet/CalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/main/webapp/pages/calc.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/AllTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/calculation/AdditionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/calculation/DivisionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/calculation/MultiplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/calculation/SubtractionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/CountBracketsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/EqualCountBracketsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ObtainPriorityOperatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ObtainValidOrderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ParserBasingOnNumbersAndSixElementsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ReplaceCommaWithDotTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ReplaceElementsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson22_23_34_servlet_junit/calculator/src/test/java/by/tms/calculator/util/ValidInputTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/CarsFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/Coupe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_coupe/FordCoupe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_coupe/ToyotaCoupe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_factory/FordFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_factory/ToyotaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_sedan/FordSedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/abstract_factory/impl_sedan/ToyotaSedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/Turkey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/duck_impl/MallardDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/duck_impl/TurkeyAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/adapter/turkey_impl/WildTurkey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/builder/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/Beverage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/CondimentDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/beverage/DarkRoast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/beverage/Espresso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/beverage/HouseBlend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/condiment/Mocha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/condiment/Soy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/decorator/condiment/Whip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/HomeTheaterFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/component/Amplifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/component/CdPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/component/DvdPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/component/Projector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/facade/component/Tuner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/PizzaTestDrive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/creator/ChicagoPizzaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/creator/NYPizzaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/creator/PizzaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/product/ChicagoStyleCheesePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/product/ChicagoStyleVeggiePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/product/NYStyleCheesePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/product/NYStyleVeggiePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/factory_method/product/Pizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson30_31_design_patterns_gof/singleton/Singleton1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/browser/BrowserHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/browser/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/browser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/lambda_stream/ClassWork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/tinkoff/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/src/by/teachmeskills/lesson_other/tinkoff/Trial.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DrjlLqtLWoNRDGi2WGFDT6pl8K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/TMS/lesson",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\TMS\lesson\src\test\java\by\teachmeskills\lesson22_23_34_servlet_junit\calculator" />
+      <recent name="C:\Users\User\IdeaProjects\TMS\lesson\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\TMS\lesson\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.by.teachmeskills.lesson20_jdbc.connection_factory.Main">
+    <configuration name="CalculatorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.teachmeskills.lesson22_23_34_servlet_junit.calculator.main.CalculatorMain" />
+      <module name="lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.teachmeskills.lesson22_23_34_servlet_junit.calculator.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="by.teachmeskills.lesson20_jdbc.connection_factory.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.teachmeskills.lesson20_jdbc.connection_factory.Main" />
+      <module name="lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.teachmeskills.lesson20_jdbc.connection_factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.teachmeskills.lesson22_23_34_servlet_junit.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.teachmeskills.lesson22_23_34_servlet_junit.calculator" />
+      <option name="MAIN_CLASS_NAME" value="by.teachmeskills.lesson22_23_34_servlet_junit.calculator.AllTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TMS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TMS" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="lesson:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="98b1c352-6200-4c5a-b721-2559deae649f" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56639" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lesson:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.by.teachmeskills.lesson20_jdbc.connection_factory.Main" />
+      <item itemvalue="Application.CalculatorMain" />
+      <item itemvalue="JUnit.AllTests" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.63" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.by.teachmeskills.lesson20_jdbc.connection_factory.Main" />
+        <item itemvalue="Application.CalculatorMain" />
+        <item itemvalue="JUnit.AllTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6fa2384-a6a4-43be-a229-f92e87e016f4" name="Changes" comment="" />
+      <created>1661464249528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661464249528</updated>
+      <workItem from="1661464251008" duration="13826000" />
+      <workItem from="1661522939464" duration="27000" />
+      <workItem from="1661522975500" duration="71000" />
+      <workItem from="1661523070632" duration="40000" />
+      <workItem from="1661523385264" duration="317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
