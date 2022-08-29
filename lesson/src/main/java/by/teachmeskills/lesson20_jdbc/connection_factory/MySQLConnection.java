@@ -7,7 +7,8 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class MySQLConnection implements ConnectionFactory {
-    private static Properties properties = PropertiesReader.getProperties("database.properties");
+    private static final String MYSQL_PROPERTIES = "database.properties";
+    private static Properties properties = PropertiesReader.getProperties(MYSQL_PROPERTIES);
     private static MysqlDataSource mysqlDS = new MysqlDataSource();
 
     public MySQLConnection() {

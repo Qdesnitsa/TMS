@@ -7,17 +7,18 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class PostgresConnection implements ConnectionFactory {
-    private static Properties properties = PropertiesReader.getProperties("database.properties");
-    private static PGConnectionPoolDataSource postgresDataSource = new PGConnectionPoolDataSource();
+    private static final String POSTGRES_PROPERTIES = "database.properties";
+    private static Properties properties = PropertiesReader.getProperties(POSTGRES_PROPERTIES);
+    private static PGConnectionPoolDataSource postgresDS = new PGConnectionPoolDataSource();
 
     public PostgresConnection() {
     }
 
     @Override
     public Connection getConnection(String url, String username, String password) throws SQLException {
-        postgresDataSource.setURL(properties.getProperty(url));
-        postgresDataSource.setUser(properties.getProperty(username));
-        postgresDataSource.setPassword(password);
-        return postgresDataSource.getConnection();
+        postgresDS.setURL(properties.getProperty(url));
+        postgresDS.setUser(properties.getProperty(username));
+        postgresDS.setPassword(password);
+        return postgresDS.getConnection();
     }
 }
