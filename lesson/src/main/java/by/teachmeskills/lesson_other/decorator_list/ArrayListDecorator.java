@@ -1,88 +1,66 @@
 package by.teachmeskills.lesson_other.decorator_list;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.UnaryOperator;
 
 public class ArrayListDecorator<T> extends ArrayList<T> {
     private List<T> listOfElements;
-    private List<T> listOfRemovedElements;
+    private Map<Integer, T> listOfRemovedElements;
 
     public ArrayListDecorator(List<T> listOfElements) {
         this.listOfElements = listOfElements;
-        listOfRemovedElements = new ArrayList<>();
+        listOfRemovedElements = new TreeMap();
     }
 
     public List<T> getListOfElements() {
         return listOfElements;
     }
 
-    public List<T> getListOfRemovedElements() {
+    public Map<Integer, T> getListOfRemovedElements() {
         return listOfRemovedElements;
     }
 
     public List<T> restoreRemovedElementsBackToList() {
-        for (int i = 0; i < listOfRemovedElements.size(); i++) {
-            if (listOfRemovedElements.get(i) != null) {
-                listOfElements.set(i, listOfRemovedElements.get(i));
+        for (Map.Entry<Integer, T> entry : listOfRemovedElements.entrySet()) {
+            if (entry.getKey() >= listOfElements.size()) {
+                for (int i = listOfElements.size(); i < entry.getKey() - 1; i++) {
+                    listOfElements.add(i, null);
+                }
             }
+            listOfElements.add(entry.getKey(), entry.getValue());
         }
         return listOfElements;
     }
 
     public void cleanListOfRemovedElements() {
-        for (int i = 0; i < listOfRemovedElements.size(); i++) {
-            listOfRemovedElements.set(i, null);
-        }
-    }
-
-    private List<T> fillListOfRemovedElements(List<T> list) {
-        for (int i = 0; i < list.size(); i++) {
-            listOfRemovedElements.add(i, null);
-        }
-        return listOfRemovedElements;
-    }
-
-    private List<T> checkListOfRemovedElementsIsNotEmpty() {
-        return listOfRemovedElements = listOfRemovedElements.isEmpty()
-                ? fillListOfRemovedElements(listOfElements)
-                : listOfRemovedElements;
+        listOfRemovedElements.clear();
     }
 
     @Override
     public boolean add(T t) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        listOfRemovedElements.add(null);
+        super.add(t);
         return listOfElements.add(t);
     }
 
     @Override
     public void add(int index, T element) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        listOfRemovedElements.add(index, null);
         listOfElements.add(index, element);
     }
 
     @Override
     public boolean remove(Object o) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        boolean isRemoved = false;
         int indexOfRemovedElement = listOfElements.indexOf(o);
-        if (indexOfRemovedElement > -1) {
-            listOfElements.set(indexOfRemovedElement, null);
-            listOfRemovedElements.set(indexOfRemovedElement, (T) o);
-            isRemoved = true;
+        if (indexOfRemovedElement != -1) {
+            listOfRemovedElements.put(indexOfRemovedElement, (T) o);
         }
-        return isRemoved;
+        return listOfElements.remove(o);
     }
+
 
     @Override
     public T remove(int index) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        listOfRemovedElements.set(index, listOfElements.get(index));
-        return listOfElements.set(index, null);
+        listOfRemovedElements.put(index, listOfElements.get(index));
+        return listOfElements.remove(index);
     }
 
     @Override
@@ -93,57 +71,40 @@ public class ArrayListDecorator<T> extends ArrayList<T> {
     @Override
     public void clear() {
         listOfElements.clear();
-        listOfRemovedElements.clear();
     }
 
     @Override
     public boolean addAll(Collection<? extends T> c) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        for (int i = 0; i < c.size(); i++) {
-            listOfRemovedElements.add(listOfRemovedElements.size() + i, null);
-        }
         return listOfElements.addAll(c);
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends T> c) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        for (int i = index; i < (index + c.size() - 1); i++) {
-            listOfRemovedElements.add(index, null);
-        }
         return listOfElements.addAll(index, c);
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        boolean isRemoved = false;
-        for (int i = 0; i < listOfElements.size(); i++) {
+        for (int i = listOfElements.size() - 1; i >= 0; i--) {
             for (Object element : c) {
-                if (listOfElements.get(i).equals(element)) {
-                    listOfRemovedElements.set(i, listOfElements.get(i));
-                    listOfElements.set(i, null);
-                    isRemoved = true;
+                if (null != listOfElements.get(i) && listOfElements.get(i).equals(element)) {
+                    listOfRemovedElements.put(i, listOfElements.get(i));
                 }
             }
         }
-        return isRemoved;
+        return listOfElements.removeAll(c);
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        listOfRemovedElements = checkListOfRemovedElementsIsNotEmpty();
-        boolean isChanged = false;
-        for (int i = 0; i < listOfElements.size(); i++) {
+        for (int i = listOfElements.size() - 1; i >= 0; i--) {
             for (Object element : c) {
-                if (!listOfElements.get(i).equals(element)) {
-                    listOfRemovedElements.set(i, listOfElements.get(i));
-                    listOfElements.set(i, null);
-                    isChanged = true;
+                if (null != listOfElements.get(i) && !listOfElements.get(i).equals(element)) {
+                    listOfRemovedElements.put(i, listOfElements.get(i));
                 }
             }
         }
-        return isChanged;
+        return listOfElements.retainAll(c);
     }
 
     @Override
