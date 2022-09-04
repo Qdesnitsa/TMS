@@ -29,11 +29,10 @@ public class Main {
         System.out.println(arrayListDecorator.getListOfElements());
         System.out.println(arrayListDecorator.getListOfRemovedElements());
         arrayListDecorator.restoreRemovedElementsBackToList();
-        System.out.println(arrayListDecorator.getListOfRemovedElements());
         System.out.println(arrayListDecorator.getListOfElements());
         arrayListDecorator.restoreRemovedElementsBackToList();
         System.out.println(arrayListDecorator.getListOfElements());
         System.out.println(arrayListDecorator.getListOfRemovedElements());
+        arrayListDecorator.cleanListOfRemovedElements();
     }
-
 }
