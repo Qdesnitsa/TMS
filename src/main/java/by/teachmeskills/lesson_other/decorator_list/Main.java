@@ -34,5 +34,8 @@ public class Main {
         System.out.println(arrayListDecorator.getListOfElements());
         System.out.println(arrayListDecorator.getListOfRemovedElements());
         arrayListDecorator.cleanListOfRemovedElements();
+
+        ArrayListDecorator<Integer> arrayListDecorator2 = new ArrayListDecorator(arrayListDecorator.getListOfElements());
+        System.out.println(arrayListDecorator2.getListOfElements());
     }
 }

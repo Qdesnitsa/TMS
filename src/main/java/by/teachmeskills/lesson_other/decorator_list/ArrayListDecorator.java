@@ -6,7 +6,7 @@ public class ArrayListDecorator<T> extends ArrayList<T> {
     private Map<Integer, T> listOfRemovedElements;
 
     public ArrayListDecorator(List<T> listOfElements) {
-        new ArrayList<>(listOfElements);
+        super(listOfElements);
         listOfRemovedElements = new TreeMap();
     }
 
