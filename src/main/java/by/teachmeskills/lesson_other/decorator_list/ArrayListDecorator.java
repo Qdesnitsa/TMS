@@ -36,53 +36,43 @@ public class ArrayListDecorator<T> extends ArrayList<T> {
 
     @Override
     public boolean remove(Object o) {
-        boolean isRemoved = false;
         int indexOfRemovedElement = this.indexOf(o);
         if (indexOfRemovedElement != -1) {
-            super.remove(o);
             listOfRemovedElements.put(indexOfRemovedElement, (T) o);
-            isRemoved = true;
         }
-        return isRemoved;
+        return super.remove(o);
     }
 
 
     @Override
     public T remove(int index) {
         if (index < this.size()) {
-            super.remove(index);
             listOfRemovedElements.put(index, this.get(index));
         }
-        return listOfRemovedElements.get(index);
+        return super.remove(index);
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        boolean isRemoved = false;
         for (int i = this.size() - 1; i >= 0; i--) {
             for (Object element : c) {
                 if (null != this.get(i) && this.get(i).equals(element)) {
                     listOfRemovedElements.put(i, this.get(i));
-                    super.removeAll(c);
-                    isRemoved = true;
                 }
             }
         }
-        return isRemoved;
+        return super.removeAll(c);
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        boolean isRemoved = false;
         for (int i = this.size() - 1; i >= 0; i--) {
             for (Object element : c) {
                 if (null != this.get(i) && !this.get(i).equals(element)) {
                     listOfRemovedElements.put(i, this.get(i));
-                    super.retainAll(c);
-                    isRemoved = true;
                 }
             }
         }
-        return isRemoved;
+        return super.retainAll(c);
     }
 }
