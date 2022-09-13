@@ -3,10 +3,10 @@ package by.teachmeskills.lesson36_collections_advanced.list;
 import java.util.*;
 
 public class DoublyLinkedList<E> implements MyList<E> {
-    transient int modificationCount = 0;
-    transient int size = 0;
-    transient Node<E> first;
-    transient Node<E> last;
+    private transient int modificationCount = 0;
+    private transient int size = 0;
+    private transient Node<E> first;
+    private transient Node<E> last;
 
     public DoublyLinkedList() {
     }

@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("utils")
-public class RemoveTest {
-    MyList<String> myList;
+public class RemoveElementFromMyListTest {
+    private MyList<String> myList;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         myList = new DoublyLinkedList<>();
         myList.add("A");
         myList.add("B");
@@ -25,7 +25,7 @@ public class RemoveTest {
 
     @DisplayName("Index is less than 0, expected IndexOutOfBoundsException")
     @Test
-    void testRemoveElementByIndexLessThanZero() {
+    public void testRemoveElementByIndexLessThanZero() {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             myList.remove(-1);
         });
@@ -33,7 +33,7 @@ public class RemoveTest {
 
     @DisplayName("Index is greater than list size, expected IndexOutOfBoundsException")
     @Test
-    void testRemoveElementByIndexGreaterThanListSize() {
+    public void testRemoveElementByIndexGreaterThanListSize() {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             myList.remove(100);
         });
@@ -41,15 +41,15 @@ public class RemoveTest {
 
     @DisplayName("Correct removal of element by index from the List")
     @Test
-    void testRemoveElementByIndexFromLinkedList() {
+    public void testRemoveElementByIndexFromLinkedList() {
         assertThat(myList).matches(p -> p.remove(3).equals("D"))
                 .as("Last added element is not the last in the list");
         assertTrue(myList.get(3).equals("E"));
     }
 
-    @DisplayName("Correct removal the last element by index from the List")
+    @DisplayName("Double removal the last element by index from the List, expected IndexOutOfBoundsException")
     @Test
-    void testRemoveLastElementByIndexFromLinkedList() {
+    public void testRemoveLastElementByIndexFromLinkedList() {
         myList.remove(4);
         assertThrows(IndexOutOfBoundsException.class, () -> {
             myList.remove(4);

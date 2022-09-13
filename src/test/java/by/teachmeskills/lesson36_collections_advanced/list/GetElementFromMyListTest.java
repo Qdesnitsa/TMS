@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 @Tag("utils")
-public class GetTest {
-    static MyList<String> myList;
+public class GetElementFromMyListTest {
+    private static MyList<String> myList;
 
     @BeforeAll
-    static void setUp() {
+    public static void setUp() {
         myList = new DoublyLinkedList<>();
         myList.add("A");
         myList.add("B");
@@ -23,20 +23,20 @@ public class GetTest {
 
     @DisplayName("Correct element is returned by index")
     @Test
-    void testGetElementByIndex() {
+    public void testGetElementByIndex() {
         assertEquals("A", myList.get(0), "first get element is incorrect");
     }
 
     @DisplayName("Element is not removed from list")
     @Test
-    void testGetElementByIndexDoesNotRemoveElement() {
+    public void testGetElementByIndexDoesNotRemoveElement() {
         myList.get(0);
         assertEquals("A", myList.get(0), "first get element was removed");
     }
 
     @DisplayName("Index is less than 0, expected IndexOutOfBoundsException")
     @Test
-    void testGetElementByIndexLessThanZero() {
+    public void testGetElementByIndexLessThanZero() {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             myList.get(-1);
         });
@@ -44,7 +44,7 @@ public class GetTest {
 
     @DisplayName("Index is greater than list size, expected IndexOutOfBoundsException")
     @Test
-    void testGetElementByIndexGreaterThanListSize() {
+    public void testGetElementByIndexGreaterThanListSize() {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             myList.get(100);
         });

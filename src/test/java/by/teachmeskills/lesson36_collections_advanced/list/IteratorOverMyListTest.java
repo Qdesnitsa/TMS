@@ -12,14 +12,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @Tag("utils")
-public class IteratorTest {
-   MyList<String> myList;
-    MyList<String> myEmptyList;
-    MyIterator<String> iterator;
-    MyIterator<String> iteratorEmptyList;
+public class IteratorOverMyListTest {
+    private MyList<String> myList;
+    private MyList<String> myEmptyList;
+    private MyIterator<String> iterator;
+    private MyIterator<String> iteratorEmptyList;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         myEmptyList = new DoublyLinkedList<>();
         myList = new DoublyLinkedList<>();
         myList.add("A");
@@ -33,19 +33,19 @@ public class IteratorTest {
 
     @DisplayName("Not empty list has the next element")
     @Test
-    void testListHasNextElement() {
+    public void testListHasNextElement() {
         assertTrue(iterator.hasNext(), "Not empty list should contain item");
     }
 
     @DisplayName("Empty list has not the next element")
     @Test
-    void testListHasNotNextElement() {
+    public void testListHasNotNextElement() {
         assertFalse(iteratorEmptyList.hasNext(), "Empty list should not contain item");
     }
 
     @DisplayName("Empty list can not return the next element, expected NoSuchElementException")
     @Test
-    void testNextReturnsExceptionIfHasNextFalse() {
+    public void testNextReturnsExceptionIfHasNextFalse() {
         assertThrows(NoSuchElementException.class, () -> {
             iteratorEmptyList.next();
         });
@@ -53,13 +53,13 @@ public class IteratorTest {
 
     @DisplayName("Not Empty list returns the next (first) element")
     @Test
-    void testNextReturnsElementIfHasNextTrue() {
+    public void testNextReturnsElementIfHasNextTrue() {
         assertThat(iterator.next()).isEqualTo("A");
     }
 
     @DisplayName("End of the list can not return the next element, expected NoSuchElementException")
     @Test
-    void testNextReturnsExceptionIfListEnd() {
+    public void testNextReturnsExceptionIfListEnd() {
         assertThrows(NoSuchElementException.class, () -> {
             while (iterator.hasNext()) {
                 iterator.next();
@@ -70,7 +70,7 @@ public class IteratorTest {
 
     @DisplayName("Removal of element bypassing iterator, expected ConcurrentModificationException")
     @Test
-    void testNextReturnsExceptionIfModifiedOutside() {
+    public void testNextReturnsExceptionIfModifiedOutside() {
         assertThrows(ConcurrentModificationException.class, () -> {
             while (iterator.hasNext()) {
                 String str = iterator.next();
@@ -84,7 +84,7 @@ public class IteratorTest {
 
     @DisplayName("Removal of element bypassing next, expected IllegalStateException")
     @Test
-    void testRemoveReturnsExceptionIfNextIsNotCalled() {
+    public void testRemoveReturnsExceptionIfNextIsNotCalled() {
         assertThrows(IllegalStateException.class, () -> {
             iterator.remove();
         });
@@ -92,7 +92,7 @@ public class IteratorTest {
 
     @DisplayName("Removal of element while iteration after calling next")
     @Test
-    void testRemoveElementAfterNextIsCalled() {
+    public void testRemoveElementAfterNextIsCalled() {
         assertThat(myList.get(0).equals("A"));
         while (iterator.hasNext()) {
             String str = iterator.next();

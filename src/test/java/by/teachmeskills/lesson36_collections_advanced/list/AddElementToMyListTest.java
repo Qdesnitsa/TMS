@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Tag("utils")
-class AddTest {
-    static MyList<String> myList;
+class AddElementToMyListTest {
+    private static MyList<String> myList;
 
     @BeforeAll
-    static void setUp() {
+    public static void setUp() {
         myList = new DoublyLinkedList<>();
         myList.add("A");
         myList.add("B");
@@ -23,7 +23,7 @@ class AddTest {
 
     @DisplayName("Correct addition of element to the end of the List")
     @Test
-    void testAddElementToTheEndLinkedList() {
+    public void testAddElementToTheEndLinkedList() {
         assertThat(myList).matches(p -> p.get(4).equals("E"))
                 .as("Last added element is not the last in the list");
         assertThat(myList).matches(p -> p.get(0).equals("A"))
