@@ -1,7 +1,5 @@
 package by.teachmeskills.lesson_other.decorator_list;
 
-import static org.junit.Assert.assertSame;
-
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
