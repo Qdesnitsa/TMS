@@ -20,7 +20,7 @@ public class ConsoleAspect {
     }
 
     @After("by.teachmeskills.lesson38_aop.calculator_app.springconfig.MyPointcut.parseMethods()")
-    public void afterCalculationResultAdvice(JoinPoint joinPoint) {
+    public void afterValidationAdvice(JoinPoint joinPoint) {
         Object[] arguments = joinPoint.getArgs();
         for (Object obj : arguments) {
             if (obj instanceof Calculator) {
