@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson38_aop.calculator_app.calculation.exception;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.calculation.exception;
 
 public class DivisionByZeroException extends Exception {
     private String reasonMsg;

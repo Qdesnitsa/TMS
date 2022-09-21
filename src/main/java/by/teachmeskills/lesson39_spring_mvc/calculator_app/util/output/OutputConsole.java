@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson38_aop.calculator_app.util.output;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.util.output;
 
 public final class OutputConsole {
   private static final String INPUT_INSTRUCTION_FOR_USER =

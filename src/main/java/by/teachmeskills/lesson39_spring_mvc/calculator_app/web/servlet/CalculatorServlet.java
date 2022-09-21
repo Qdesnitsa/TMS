@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson38_aop.calculator_app.web.servlet;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.web.servlet;
 
-import by.teachmeskills.lesson38_aop.calculator_app.entity.Calculator;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.entity.Calculator;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

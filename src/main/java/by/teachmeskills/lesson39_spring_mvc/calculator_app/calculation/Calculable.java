@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson38_aop.calculator_app.calculation;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.calculation;
 
-import by.teachmeskills.lesson38_aop.calculator_app.calculation.exception.DivisionByZeroException;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.calculation.exception.DivisionByZeroException;
 
 public interface Calculable {
     static double sum(double a, double b) {

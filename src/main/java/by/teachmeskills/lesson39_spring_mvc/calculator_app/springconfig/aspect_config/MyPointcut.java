@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson39_spring_mvc.calculator_app.springconfig;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.springconfig.aspect_config;
 
 import org.aspectj.lang.annotation.Pointcut;
 

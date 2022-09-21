@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson38_aop.calculator_app.entity;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.entity;
 
-import by.teachmeskills.lesson38_aop.calculator_app.calculation.CalculatorSuper;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.calculation.CalculatorSuper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson38_aop.calculator_app.util.validator;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.util.validator;
 
 import java.util.ArrayList;
 import java.util.List;

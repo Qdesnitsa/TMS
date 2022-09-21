@@ -1,0 +1,6 @@
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.springconfig.security_config;
+
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+
+public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
+}

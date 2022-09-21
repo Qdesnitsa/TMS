@@ -1,7 +1,7 @@
-package by.teachmeskills.lesson38_aop.calculator_app.util.validator;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.util.validator;
 
-import by.teachmeskills.lesson38_aop.calculator_app.util.input.InputScanner;
-import by.teachmeskills.lesson38_aop.calculator_app.util.output.OutputConsole;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.util.input.InputScanner;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.util.output.OutputConsole;
 
 import java.util.List;
 import java.util.regex.Matcher;

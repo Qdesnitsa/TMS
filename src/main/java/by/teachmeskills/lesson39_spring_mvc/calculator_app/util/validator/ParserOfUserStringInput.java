@@ -1,6 +1,6 @@
-package by.teachmeskills.lesson38_aop.calculator_app.util.validator;
+package by.teachmeskills.lesson39_spring_mvc.calculator_app.util.validator;
 
-import by.teachmeskills.lesson38_aop.calculator_app.entity.Calculator;
+import by.teachmeskills.lesson39_spring_mvc.calculator_app.entity.Calculator;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
