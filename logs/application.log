@@ -37,3 +37,63 @@
 2022-09-19 23:35:39 WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'calculatorSuper': Unsatisfied dependency expressed through field 'parser'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'parserOfUserStringInput' defined in file [C:\Users\User\IdeaProjects\TMS\target\classes\by\teachmeskills\lesson38_aop\calculator_app\util\validator\ParserOfUserStringInput.class]: Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class by.teachmeskills.lesson38_aop.calculator_app.util.validator.ParserOfUserStringInput: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class by.teachmeskills.lesson38_aop.calculator_app.util.validator.ParserOfUserStringInput
 2022-09-20 01:06:59 ERROR by.teachmeskills.lesson38_aop.calculator_app.springconfig.LoggingAspect - afterThrowingAnyExceptionLoggingAdvice: Cannot invoke "java.lang.Double.doubleValue()" because the return value of "java.util.Stack.pop()" is nullMethodName: public void by.teachmeskills.lesson38_aop.calculator_app.calculation.CalculatorSuper.calculateResult(by.teachmeskills.lesson38_aop.calculator_app.entity.Calculator)
 2022-09-21 18:58:36 ERROR by.teachmeskills.lesson39_spring_mvc.calculator_app.springconfig.aspect_config.LoggingAspect - afterThrowingAnyExceptionLoggingAdvice: Cannot invoke "java.lang.Double.doubleValue()" because the return value of "java.util.Stack.pop()" is nullMethodName: public void by.teachmeskills.lesson39_spring_mvc.calculator_app.calculation.CalculatorSuper.calculateResult(by.teachmeskills.lesson39_spring_mvc.calculator_app.entity.Calculator)
+2022-09-25 02:28:38 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 02:28:39 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 02:28:39 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 02:28:39 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 02:28:39 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 02:28:39 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 02:28:39 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 02:28:39 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 02:28:40 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 02:28:40 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 02:57:20 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 02:57:21 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 02:57:21 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 02:57:21 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 02:57:21 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 02:57:21 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 02:57:21 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 02:57:21 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 02:57:22 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 02:57:23 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:09:54 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 03:09:54 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 03:09:55 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 03:09:55 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:09:55 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 03:09:55 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 03:09:55 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 03:09:55 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 03:09:55 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 03:09:56 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:13:33 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 03:13:33 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 03:13:33 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 03:13:33 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:13:33 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 03:13:33 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 03:13:33 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 03:13:34 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 03:13:34 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 03:13:35 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:16:46 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 03:16:47 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 03:16:47 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 03:16:47 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:16:47 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 03:16:47 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 03:16:47 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 03:16:47 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 03:16:48 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 03:16:48 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:17:35 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.11.Final}
+2022-09-25 03:17:36 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-09-25 03:17:36 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-09-25 03:17:36 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]
+2022-09-25 03:17:36 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=bestuser}
+2022-09-25 03:17:36 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2022-09-25 03:17:36 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-09-25 03:17:36 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-25 03:17:37 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.0.Final
+2022-09-25 03:17:38 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC]

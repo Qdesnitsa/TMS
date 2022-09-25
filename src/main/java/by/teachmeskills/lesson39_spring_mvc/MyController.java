@@ -3,6 +3,7 @@
 //import org.springframework.stereotype.Controller;
 //import org.springframework.ui.Model;
 //import org.springframework.validation.BindingResult;
+//import org.springframework.web.bind.annotation.ExceptionHandler;
 //import org.springframework.web.bind.annotation.ModelAttribute;
 //import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
@@ -50,10 +51,26 @@
 ////        emp.setName("Mr./Ms. " + emp.getName());
 ////        emp.setSurname(emp.getSurname() + "!!!");
 ////        emp.setSalary(emp.getSalary()*100);
+//
+////     if (bindingResult.hasErrors()) {
+////            List<FieldError> fieldErrors = bindingResult.getFieldErrors();
+////			for (FieldError fieldError : fieldErrors) {
+////                model.addAttribute(fieldError.getField(), fieldError.getDefaultMessage());
+////            }
+////            return "calc";
+////        } else {
+////            return "calc";
+////        }
+//
 //        if (bindingResult.hasErrors()) {
 //            return "ask-emp-details-view";
 //        } else {
 //            return "show-emp-details-view";
 //        }
+//    }
+//
+//    @ExceptionHandler(Throwable.class)
+//    public String error() {
+//        return "error";
 //    }
 //}
