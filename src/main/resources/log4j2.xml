@@ -9,7 +9,7 @@
                 name="RollingFileAppender"
                 fileName="logs/application.log"
                 immediateFlush="true"
-                append="true"
+                append="false"
                 filePattern="logs/application.%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
             <SizeBasedTriggeringPolicy size="800 KB"/>

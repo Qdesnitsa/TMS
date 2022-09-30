@@ -1,11 +1,9 @@
-package by.teachmeskills.lesson43_44_hibernate;
+package by.teachmeskills.lesson43_44_hibernate.introduction;
 
-import by.teachmeskills.lesson43_44_hibernate.entity.Employee;
+import by.teachmeskills.lesson43_44_hibernate.introduction.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,11 +28,16 @@ public class Main {
             session.beginTransaction();
 //            List<Employee> emps = session.createQuery("FROM Employee")
 //                            .getResultList();
-            List<Employee> emps = session.createQuery("FROM Employee WHERE name = 'Tom' AND salary > 20000")
-                    .getResultList();
-            for (Employee e : emps) {
-                System.out.println(e);
-            }
+//            List<Employee> emps = session.createQuery("FROM Employee WHERE name = 'Tom' AND salary > 20000")
+//                    .getResultList();
+//            for (Employee e : emps) {
+//                System.out.println(e);
+//            }
+            //Employee emp = session.get(Employee.class,3);
+            //emp.setSalary(15000);
+            //session.createQuery("UPDATE Employee SET salary=25000 WHERE name='Tom'").executeUpdate();
+            //session.delete(emp);
+            session.createQuery("DELETE Employee WHERE name='Bob'").executeUpdate();
             session.getTransaction().commit();
 
         } finally {

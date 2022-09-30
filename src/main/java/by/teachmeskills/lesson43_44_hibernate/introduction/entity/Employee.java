@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson43_44_hibernate.entity;
+package by.teachmeskills.lesson43_44_hibernate.introduction.entity;
 
 import javax.persistence.*;
 
