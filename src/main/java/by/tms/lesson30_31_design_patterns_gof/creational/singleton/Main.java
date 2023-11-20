@@ -1,5 +1,7 @@
 package by.tms.lesson30_31_design_patterns_gof.creational.singleton;
 
+import by.tms.lesson30_31_design_patterns_gof.creational.singleton.singleton_types.*;
+
 public class Main {
     public static void main(String[] args) {
         Singleton1 s1 = Singleton1.getInstance();
