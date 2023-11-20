@@ -1,6 +1,5 @@
-package by.teachmeskills.lesson22_23_34_servlet_junit.calculator.calculation;
+package by.tms.lesson22_23_34_servlet_junit.calculator.calculation;
 
-import by.tms.lesson22_23_34_servlet_junit.calculator.calculation.ICalculator;
 import by.tms.lesson22_23_34_servlet_junit.calculator.exception.DivisionByZeroException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

@@ -1,8 +1,5 @@
-package by.teachmeskills.lesson36_collections_advanced.list;
+package by.tms.lesson36_collections_advanced.list;
 
-import by.tms.lesson36_collections_advanced.list.DoublyLinkedList;
-import by.tms.lesson36_collections_advanced.list.MyIterator;
-import by.tms.lesson36_collections_advanced.list.MyList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

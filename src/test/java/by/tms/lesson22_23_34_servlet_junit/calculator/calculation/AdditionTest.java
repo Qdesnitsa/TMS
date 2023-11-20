@@ -1,6 +1,5 @@
-package by.teachmeskills.lesson22_23_34_servlet_junit.calculator.calculation;
+package by.tms.lesson22_23_34_servlet_junit.calculator.calculation;
 
-import by.tms.lesson22_23_34_servlet_junit.calculator.calculation.ICalculator;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

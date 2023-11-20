@@ -1,4 +1,4 @@
-package by.teachmeskills.lesson22_23_34_servlet_junit.calculator;
+package by.tms.lesson36_collections_advanced;
 
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -7,9 +7,8 @@ import org.junit.platform.suite.api.SelectPackages;
 import org.junit.platform.suite.api.Suite;
 
 @Execution(ExecutionMode.CONCURRENT)
-@SelectPackages({"by.teachmeskills.lesson22_23_34_servlet_junit.calculator.calculation",
-                "by.teachmeskills.lesson22_23_34_servlet_junit.calculator.util"})
+@SelectPackages({"by.teachmeskills.lesson36_collections_advanced.list"})
 @Suite
-@IncludeTags({"calculator","utils"})
+@IncludeTags({"utils"})
 public class AllTests {
 }

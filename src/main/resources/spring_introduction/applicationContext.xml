@@ -18,7 +18,7 @@
     <!--
     Dependency Injection с помощью конструктора
     <bean id = "myPerson"
-          class="by.teachmeskills.lesson37_springcore.configuration_xml.Person">
+          class="by.tms.lesson37_springcore.configuration_xml.Person">
         <constructor-arg ref="myPet"></constructor-arg>
     </bean>
      -->
