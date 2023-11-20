@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="myPet"
-          class="by.teachmeskills.lesson37_springcore.configuration_xml.Cat"
+          class="by.tms.lesson37_springcore.configuration_xml.Cat"
         scope="prototype"
           init-method="init"
           destroy-method="destroy">

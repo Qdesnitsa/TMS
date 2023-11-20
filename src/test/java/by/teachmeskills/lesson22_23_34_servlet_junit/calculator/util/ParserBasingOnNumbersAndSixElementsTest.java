@@ -1,5 +1,6 @@
 package by.teachmeskills.lesson22_23_34_servlet_junit.calculator.util;
 
+import by.tms.lesson22_23_34_servlet_junit.calculator.util.ParserOfUserStringInput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

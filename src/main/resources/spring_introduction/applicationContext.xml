@@ -10,7 +10,7 @@
     <context:property-placeholder location="classpath:spring_introduction/myApp.properties"></context:property-placeholder>
 
     <bean id="myPet"
-          class="by.teachmeskills.lesson37_springcore.configuration_xml.Cat"
+          class="by.tms.lesson37_springcore.configuration_xml.Cat"
           init-method="init"
           destroy-method="destroy">
     </bean>
@@ -24,7 +24,7 @@
      -->
 
     <bean id = "myPerson"
-          class="by.teachmeskills.lesson37_springcore.configuration_xml.Person">
+          class="by.tms.lesson37_springcore.configuration_xml.Person">
         <property name="pet" ref="myPet"></property>
 
         <property name="surname" value="${person.surname}"></property>
