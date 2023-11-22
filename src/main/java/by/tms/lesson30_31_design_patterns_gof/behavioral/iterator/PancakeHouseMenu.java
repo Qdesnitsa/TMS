@@ -1,4 +1,4 @@
-package by.tms.lesson30_31_design_patterns_gof.behavior.iterator;
+package by.tms.lesson30_31_design_patterns_gof.behavioral.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;

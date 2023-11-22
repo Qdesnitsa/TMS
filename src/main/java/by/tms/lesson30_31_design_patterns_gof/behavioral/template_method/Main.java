@@ -1,4 +1,4 @@
-package by.tms.lesson30_31_design_patterns_gof.behavior.template_method;
+package by.tms.lesson30_31_design_patterns_gof.behavioral.template_method;
 
 public class Main {
     public static void main(String[] args) {
